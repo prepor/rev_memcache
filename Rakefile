@@ -5,13 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rev_memcache"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "rudenkoco@gmail.com"
+    gem.summary = %Q{Rev memcache client}
+    gem.description = %Q{Rev memcache client}
+    gem.email = "ceo@prepor.ru"
     gem.homepage = "http://github.com/prepor/rev_memcache"
     gem.authors = ["Andrew Rudenko"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "rev", ">= 0"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
